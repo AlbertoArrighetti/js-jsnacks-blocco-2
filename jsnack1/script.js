@@ -29,7 +29,7 @@ while (sum < 50) {
     }
 
 
-    // log
+    // log da rimuovere 
     console.log(sum, number, numbersArray);
 }
 
