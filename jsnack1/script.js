@@ -11,12 +11,11 @@ let numbersArray = [];
 let sum = 0;
 
 
-
-// Finché la somma è < 50
-while (sum < 50) {
+// fai queste azioni
+do{
     // chiedo di inserire un numero 
     let number = Number(prompt("inserire un numero:"));
-
+    
     if(isNaN(number)){
         // se non è un numero 
         alert("inserire solo caratteri numerici.")
@@ -27,11 +26,14 @@ while (sum < 50) {
         // lo sommo per vedere se è < 50
         sum += number;
     }
-
-
+    
+    
     // log da rimuovere 
     console.log(sum, number, numbersArray);
-}
+    
+    
+// Finché la somma è < 50
+}while (sum < 50) ;
 
 
 document.getElementById("result").innerHTML = "I numeri da te inseriti sono: " + numbersArray + "<br> la somma è: " + sum ;
